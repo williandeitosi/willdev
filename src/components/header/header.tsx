@@ -28,7 +28,10 @@ export default function Header() {
   };
 
   return (
-    <AppBar position='static' sx={{ bgcolor: '#eee' }}>
+    <AppBar
+      position='static'
+      sx={{ background: 'transparent', boxShadow: 'none' }}
+    >
       <Container maxWidth='xl'>
         <Toolbar
           disableGutters
@@ -38,7 +41,7 @@ export default function Header() {
             sx={{
               flexGrow: 1,
               display: { xs: 'flex', md: 'none' },
-              justifyContent: 'center',
+              justifyContent: 'flex-end',
             }}
           >
             <IconButton
@@ -68,7 +71,8 @@ export default function Header() {
               sx={{
                 display: { xs: 'block', md: 'none' },
                 '& .MuiMenu-paper': {
-                  backgroundColor: '#eee',
+                  background: '#fff',
+                  boxShadow: 'none',
                 },
               }}
             >
@@ -92,7 +96,6 @@ export default function Header() {
                 sx={{
                   my: 2,
                   color: 'black',
-                  fontWeight: 'bold',
                   display: 'block',
                 }}
               >
