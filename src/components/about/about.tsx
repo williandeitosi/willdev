@@ -34,7 +34,7 @@ export default function About() {
             <Typography
               sx={{
                 variant: 'h1',
-                fontSize: { xs: 35, md: 40, lg: 40 },
+                fontSize: { xs: 20, sm: 40, lg: 40 },
               }}
             >
               Willian Giovanini Dei Tosi
@@ -82,20 +82,32 @@ export default function About() {
         >
           <Box
             sx={{
-              position: 'relative',
-              width: { xs: 100, sm: 150, md: 250 },
-              height: { xs: 100, sm: 150, md: 250 },
+              width: { xs: 90, sm: 160, md: 260 },
+              height: { xs: 90, sm: 160, md: 260 },
+              background: 'linear-gradient(45deg, #000, #a0a0a0)',
               marginBottom: { xs: 2, md: 0 },
               borderRadius: '50%',
-              overflow: 'hidden',
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
             }}
           >
-            <Image
-              alt='foto'
-              src={'https://avatars.githubusercontent.com/u/104787632?v=4'}
-              layout='fill'
-              objectFit='cover'
-            />
+            <Box
+              sx={{
+                position: 'relative',
+                width: { xs: 80, sm: 150, md: 250 },
+                height: { xs: 80, sm: 150, md: 250 },
+                borderRadius: '50%',
+                overflow: 'hidden',
+              }}
+            >
+              <Image
+                alt='foto'
+                src={'https://avatars.githubusercontent.com/u/104787632?v=4'}
+                layout='fill'
+                objectFit='cover'
+              />
+            </Box>
           </Box>
         </Grid>
       </Grid>
