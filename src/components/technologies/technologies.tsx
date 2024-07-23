@@ -29,7 +29,7 @@ export default function Technologies() {
               alignItems: 'center',
             }}
           >
-            <Image src='/html5.png' alt='js' width={40} height={40} />
+            <Image src='/techs/html5.png' alt='js' width={40} height={40} />
           </Box>
         </Grid>
         <Grid sm={2} md={1} xs={4} item>
@@ -40,7 +40,7 @@ export default function Technologies() {
               alignItems: 'center',
             }}
           >
-            <Image src='/css3.png' alt='js' width={40} height={40} />
+            <Image src='/techs/css3.png' alt='js' width={40} height={40} />
           </Box>
         </Grid>
         <Grid sm={2} md={1} xs={4} item>
@@ -51,7 +51,7 @@ export default function Technologies() {
               alignItems: 'center',
             }}
           >
-            <Image src='/js.png' alt='js' width={40} height={40} />
+            <Image src='/techs/js.png' alt='js' width={40} height={40} />
           </Box>
         </Grid>
         <Grid sm={2} md={1} xs={4} item>
@@ -62,7 +62,7 @@ export default function Technologies() {
               alignItems: 'center',
             }}
           >
-            <Image src='/ts.png' alt='js' width={40} height={40} />
+            <Image src='/techs/ts.png' alt='js' width={40} height={40} />
           </Box>
         </Grid>
         <Grid sm={2} md={1} xs={4} item>
@@ -73,7 +73,7 @@ export default function Technologies() {
               alignItems: 'center',
             }}
           >
-            <Image src='/react.png' alt='js' width={40} height={40} />
+            <Image src='/techs/react.png' alt='js' width={40} height={40} />
           </Box>
         </Grid>
         <Grid sm={2} md={1} xs={4} item>
@@ -84,7 +84,7 @@ export default function Technologies() {
               alignItems: 'center',
             }}
           >
-            <Image src='/nextjs.png' alt='js' width={40} height={40} />
+            <Image src='/techs/nextjs.png' alt='js' width={40} height={40} />
           </Box>
         </Grid>
         <Grid sm={4} md={1} xs={4} item>
@@ -95,7 +95,7 @@ export default function Technologies() {
               alignItems: 'center',
             }}
           >
-            <Image src='/nestjs.png' alt='js' width={40} height={40} />
+            <Image src='/techs/nestjs.png' alt='js' width={40} height={40} />
           </Box>
         </Grid>
         <Grid sm={4} md={1} xs={4} item>
@@ -106,7 +106,7 @@ export default function Technologies() {
               alignItems: 'center',
             }}
           >
-            <Image src='/tailwind.png' alt='js' width={40} height={40} />
+            <Image src='/techs/tailwind.png' alt='js' width={40} height={40} />
           </Box>
         </Grid>
         <Grid sm={4} md={1} xs={4} item>
@@ -117,7 +117,7 @@ export default function Technologies() {
               alignItems: 'center',
             }}
           >
-            <Image src='/jest.png' alt='js' width={40} height={40} />
+            <Image src='/techs/jest.png' alt='js' width={40} height={40} />
           </Box>
         </Grid>
       </Grid>
