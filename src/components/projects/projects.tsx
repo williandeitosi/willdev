@@ -11,7 +11,7 @@ export default function Projects() {
     <Grid
       container
       marginTop={5}
-      bgcolor={'#eee'}
+      bgcolor={'#000'}
       padding={2}
       sx={{
         justifyContent: 'center',
@@ -35,7 +35,7 @@ export default function Projects() {
             component='img'
             alt='green iguana'
             height='200'
-            image='/project/bs.gif'
+            image='/project/barber.png'
           />
           <CardContent>
             <Typography gutterBottom variant='h5' component='div'>

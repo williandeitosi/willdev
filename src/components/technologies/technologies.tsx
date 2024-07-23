@@ -1,5 +1,6 @@
 import { Box, Grid, Typography } from '@mui/material';
 import Image from 'next/image';
+import TECHS from './techs';
 
 export default function Technologies() {
   return (
@@ -20,106 +21,41 @@ export default function Technologies() {
       >
         Tecnologias
       </Typography>
-      <Grid container rowSpacing={3}>
-        <Grid sm={2} md={1} xs={4} item>
-          <Box
+      <Grid
+        container
+        gap={2}
+        sx={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}
+      >
+        {TECHS.map((tech, index) => (
+          <Grid
+            item
+            xs={4}
+            sm={2}
+            lg={1}
+            key={index}
             sx={{
               display: 'flex',
               justifyContent: 'center',
               alignItems: 'center',
+              flexDirection: 'column',
+              boxShadow: 3,
+              borderRadius: 3,
+              height: 70,
+              ':hover': {
+                transform: 'scale(1.1)',
+              },
             }}
           >
-            <Image src='/techs/html5.png' alt='js' width={40} height={40} />
-          </Box>
-        </Grid>
-        <Grid sm={2} md={1} xs={4} item>
-          <Box
-            sx={{
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
-            }}
-          >
-            <Image src='/techs/css3.png' alt='js' width={40} height={40} />
-          </Box>
-        </Grid>
-        <Grid sm={2} md={1} xs={4} item>
-          <Box
-            sx={{
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
-            }}
-          >
-            <Image src='/techs/js.png' alt='js' width={40} height={40} />
-          </Box>
-        </Grid>
-        <Grid sm={2} md={1} xs={4} item>
-          <Box
-            sx={{
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
-            }}
-          >
-            <Image src='/techs/ts.png' alt='js' width={40} height={40} />
-          </Box>
-        </Grid>
-        <Grid sm={2} md={1} xs={4} item>
-          <Box
-            sx={{
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
-            }}
-          >
-            <Image src='/techs/react.png' alt='js' width={40} height={40} />
-          </Box>
-        </Grid>
-        <Grid sm={2} md={1} xs={4} item>
-          <Box
-            sx={{
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
-            }}
-          >
-            <Image src='/techs/nextjs.png' alt='js' width={40} height={40} />
-          </Box>
-        </Grid>
-        <Grid sm={4} md={1} xs={4} item>
-          <Box
-            sx={{
-              display: 'flex',
-              justifyContent: { xs: 'center', sm: 'flex-end', md: 'center' },
-              alignItems: 'center',
-            }}
-          >
-            <Image src='/techs/nestjs.png' alt='js' width={40} height={40} />
-          </Box>
-        </Grid>
-        <Grid sm={4} md={1} xs={4} item>
-          <Box
-            sx={{
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
-            }}
-          >
-            <Image src='/techs/tailwind.png' alt='js' width={40} height={40} />
-          </Box>
-        </Grid>
-        <Grid sm={4} md={1} xs={4} item>
-          <Box
-            sx={{
-              display: 'flex',
-              justifyContent: { xs: 'center', sm: 'flex-start', md: 'center' },
-              alignItems: 'center',
-            }}
-          >
-            <Image src='/techs/jest.png' alt='js' width={40} height={40} />
-          </Box>
-        </Grid>
+            <Image src={tech.src} alt={tech.alt} width={40} height={40} />
+            <Typography component='span' sx={{ opacity: 0.6 }}>
+              {tech.alt}
+            </Typography>
+          </Grid>
+        ))}
       </Grid>
     </Box>
   );
