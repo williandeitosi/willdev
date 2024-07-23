@@ -82,8 +82,8 @@ export default function About() {
         >
           <Box
             sx={{
-              width: { xs: 90, sm: 160, md: 260 },
-              height: { xs: 90, sm: 160, md: 260 },
+              width: { xs: 88, sm: 158, md: 260 },
+              height: { xs: 88, sm: 158, md: 260 },
               background: 'linear-gradient(45deg, #000, #a0a0a0)',
               marginBottom: { xs: 2, md: 0 },
               borderRadius: '50%',
