@@ -1,5 +1,7 @@
 import Footer from '@/components/footer/footer';
-import Header from '@/components/header/header';
+import ToggleColorMode, {
+  ThemeToggle,
+} from '@/components/header/toggleColorMode';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 
@@ -26,9 +28,11 @@ export default function RootLayout({
           margin: 0,
         }}
       >
-        <Header />
-        <main style={{ flex: 1 }}>{children}</main>
-        <Footer />
+        <ToggleColorMode>
+          <ThemeToggle />
+          <main style={{ flex: 1 }}>{children}</main>
+          <Footer />
+        </ToggleColorMode>
       </body>
     </html>
   );

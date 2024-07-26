@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export default function About() {
   return (
-    <Box marginTop={2}>
+    <Box marginTop={5}>
       <Grid
         container
         sx={{
@@ -57,7 +57,7 @@ export default function About() {
           <Box alignSelf={'flex-start'} sx={{ display: 'flex', gap: 1 }}>
             <Link href={'https://github.com/williandeitosi'} target='_blank'>
               <IconButton sx={{ width: 50, height: 50 }}>
-                <GitHubIcon sx={{ color: 'black', fontSize: 30 }} />
+                <GitHubIcon sx={{ fontSize: 30 }} />
               </IconButton>
             </Link>
             <Link
@@ -65,7 +65,7 @@ export default function About() {
               target='_blank'
             >
               <IconButton sx={{ width: 50, height: 50 }}>
-                <LinkedInIcon sx={{ color: 'black', fontSize: 30 }} />
+                <LinkedInIcon sx={{ fontSize: 30 }} />
               </IconButton>
             </Link>
           </Box>

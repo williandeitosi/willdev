@@ -44,6 +44,7 @@ export default function Technologies() {
               flexDirection: 'column',
               boxShadow: 3,
               borderRadius: 3,
+              transition: 'transform 0.3s ease-in-out',
               height: 70,
               ':hover': {
                 transform: 'scale(1.1)',
