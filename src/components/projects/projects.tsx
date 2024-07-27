@@ -20,7 +20,7 @@ export default function Projects() {
         }}
       >
         Projetos
-      </Typography>{' '}
+      </Typography>
       <Grid
         container
         marginTop={5}
@@ -44,7 +44,9 @@ export default function Projects() {
         >
           <Card
             sx={{
+              display: 'grid',
               maxWidth: 345,
+              minHeight: 450,
               boxShadow: 10,
               borderRadius: 2,
               transition: 'transform 0.3s ease-in-out',
@@ -82,7 +84,8 @@ export default function Projects() {
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'start',
-                justifyContent: 'center',
+                alignSelf: 'end',
+                justifySelf: 'flex-start',
                 margin: 0,
                 padding: 1.2,
                 gap: 1,
@@ -147,7 +150,9 @@ export default function Projects() {
         >
           <Card
             sx={{
+              display: 'grid',
               maxWidth: 345,
+              minHeight: 450,
               boxShadow: 10,
               borderRadius: 2,
               transition: 'transform 0.3s ease-in-out',
@@ -177,7 +182,7 @@ export default function Projects() {
               <Typography variant='body2' color='text.secondary'>
                 Desenvolvendo um blog para compartilhar os meus estudos no mundo
                 do desenvolvimento web. O foco destacar as melhores práticas,
-                dicas e tutoriais sobre programação e design.
+                dicas e tutoriais sobre programação.
               </Typography>
             </CardContent>
             <Box
@@ -185,7 +190,8 @@ export default function Projects() {
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'start',
-                justifyContent: 'center',
+                alignSelf: 'end',
+                justifySelf: 'flex-start',
                 margin: 0,
                 padding: 1.2,
                 gap: 1,
@@ -198,7 +204,7 @@ export default function Projects() {
                   gap: 1,
                 }}
               >
-                <CodeIcon /> React, Tailwindcss
+                <CodeIcon /> React, Tailwindcss, NestJS, Prisma, Quill
               </Typography>
               <Box
                 sx={{
@@ -210,12 +216,17 @@ export default function Projects() {
               >
                 <GitHub />
                 <Link
-                  href={
-                    'https://github.com/williandeitosi/landing-page-barbearia'
-                  }
+                  href={'https://github.com/williandeitosi/frontend-blog'}
                   target='_blank'
                 >
-                  GitHub
+                  Front-end
+                </Link>
+                /
+                <Link
+                  href={'https://github.com/williandeitosi/backend-blog'}
+                  target='_blank'
+                >
+                  Back-end
                 </Link>
               </Box>
               <Box
@@ -227,12 +238,7 @@ export default function Projects() {
                 }}
               >
                 <LinkIcon />
-                <Link
-                  href={'https://landing-page-barbearia-delta.vercel.app/'}
-                  target='_blank'
-                >
-                  Site demo
-                </Link>
+                Em desenvolvimento
               </Box>
             </Box>
           </Card>
