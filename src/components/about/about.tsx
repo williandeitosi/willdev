@@ -40,10 +40,13 @@ export default function About() {
               Willian Giovanini Dei Tosi
             </Typography>
             <Typography sx={{ display: { xs: 'none', md: 'block' } }}>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit,
-              quod quibusdam nulla dolore commodi dignissimos molestias minima
-              quasi quaerat neque reprehenderit, adipisci veniam veritatis sed?
-              Recusandae, maiores? Dolorem, optio soluta.
+              Desenvolvedor Júnior com experiência em desenvolvimento web,
+              especializado em ReactJS e Node.js (NestJS). Paixão por criar
+              soluções eficientes e inovadoras, com experiência prática em
+              projetos próprios e colaboração em projetos open source, incluindo
+              a contribuição para o SOS-RS. Busco uma oportunidade para aplicar
+              e expandir minhas habilidades em um ambiente desafiador e
+              colaborativo.
             </Typography>
             <Typography
               sx={{
