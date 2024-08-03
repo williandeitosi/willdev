@@ -73,7 +73,6 @@ export default function ToggleColorMode({ children }: { children: ReactNode }) {
           mode,
           ...(mode === 'light'
             ? {
-                // Paleta para o tema claro
                 primary: {
                   main: '#1976d2',
                 },
@@ -86,7 +85,6 @@ export default function ToggleColorMode({ children }: { children: ReactNode }) {
                 },
               }
             : {
-                // Paleta para o tema escuro
                 primary: {
                   main: '#90caf9',
                 },
